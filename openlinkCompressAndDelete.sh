@@ -1,6 +1,5 @@
 #!/bin/bash
 # To compress and delete openlink files over 3 years old
-# scarvill
 # initial
 #
 # VARs
