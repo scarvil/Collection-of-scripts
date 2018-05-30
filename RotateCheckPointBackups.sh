@@ -1,20 +1,18 @@
 #!/bin/bash
-#!/bin/bash
 # Vars
 USER=p4dti
 P4ROOT=/data/P4ROOT
 LOG=/tmp/ckp.$(date +%m%d%Y).log
 SEND=/usr/sbin/sendmail
 HOST=`hostname -s`
-MAIL="scarville@company.com"
+MAIL="user@company.com"
 P4D=/usr/local/bin/p4d
 JOURNAL=/opt/perforce/backups/perforce_journal/journal
 BACKUPDIR=/opt/perforce/backups/perforce_journal/
 JNL=`su - $USER -c 'p4 counter journal'`
 JNL2=`expr $JNL - 1`
 CKP=`ls ${BACKUPDIR}*${JNL}*`
-#NOTIFY="dt_perforce_notifications@company.com"
-NOTIFY="scarville@company.com"
+NOTIFY="user@company.com"
 # Check if recent ckp file is in the backupdir
 FIND_RECENT_CKP=`find $BACKUPDIR -iname "*ckp.${JNL}.gz"`
 # Check if 2nd ckp file is in the backupdir
