@@ -1,5 +1,6 @@
 #!/bin/bash
 # Assuming there are only 10 entries
+# and system is running centos 6.
 #
 # Check if I am root
 ID=$(id -u)
