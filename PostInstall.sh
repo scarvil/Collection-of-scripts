@@ -1,5 +1,5 @@
 #!/bin/bash
-IP=192.168.1.2
+IP=$1
 # Install bogus-jce-jdk1.8.0_73-1.0-0.el7.x86_64.rpm
 wget http://$IP/kickstart/extras/bogus-jce-jdk1.8.0_73-1.0-0.el7.x86_64.rpm
 rpm -ivh  bogus-jce-jdk1.8.0_73-1.0-0.el7.x86_64.rpm 
